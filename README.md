@@ -24,7 +24,8 @@
 
 ## 4. Bir Vue bileşenini nasıl tanımlarsınız?
 
-```export default {
+```
+export default {
   name: 'MyComponent',
   data() {
     return {
@@ -64,7 +65,8 @@
     hesaplamaları temsil eder. Vue.js, bağımlılıkları izler
     ve gerektiğinde hesaplamayı tekrarlar.
 
-```const count = ref(0);
+```
+const count = ref(0);
 const doubleCount = computed(() => count.value * 2);
 ```
 
@@ -76,7 +78,8 @@ const doubleCount = computed(() => count.value * 2);
 
 ## 10. Vue 3'te bir bileşene nasıl props tanımlanır?
 
-```export default {
+```
+export default {
   props: {
     title: {
       type: String,
@@ -89,7 +92,8 @@ console.log(title)
 
 ya da script setup ile :
 
-```const props = defineProps(['title'])
+```
+const props = defineProps(['title'])
 console.log(title)
 ```
 
@@ -148,7 +152,8 @@ console.log(title)
     Direktifler, DOM elemanlarına ek davranışlar eklemek için
     kullanılır.
 
-```app.directive('focus', {
+```
+app.directive('focus', {
   mounted(el) {
     el.focus();
   }
