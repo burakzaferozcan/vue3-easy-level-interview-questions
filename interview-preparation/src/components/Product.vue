@@ -2,8 +2,8 @@
   <div class="border">
     <h1>reactive ve computed</h1>
     <h1>Ürün Bilgileri</h1>
-    <p>Ürün Adı: {{ productName }}</p>
-    <p>Fiyat: {{ productPrice }}</p>
+    <p>Ürün Adı: {{ product.name }}</p>
+    <p>Fiyat: {{ product.price }}</p>
     <p>İndirimli Fiyat: {{ discountedPrice }}</p>
   </div>
 </template>
