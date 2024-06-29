@@ -19,6 +19,7 @@
     <User />
     <Test />
     <PiniaExample />
+    <TeleportExample />
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import User from "../components/User.vue";
 import Product from "../components/Product.vue";
 import Test from "../components/Test.vue";
 import PiniaExample from "../components/PiniaExample.vue";
+import TeleportExample from "../components/TeleportExample.vue";
 
 const title2 = ref("Interview Preparation prop 2");
 </script>

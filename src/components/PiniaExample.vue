@@ -4,6 +4,8 @@
     <p>{{ count }}</p>
     <button @click="increment">arttır</button>
     <button @click="decrement">azalt</button>
+    <button @click="incrementAsync">async arttır</button>
+    <button @click="decrementAsync">async azalt</button>
   </div>
 </template>
 
@@ -13,5 +15,5 @@ import { storeToRefs } from "pinia";
 
 const store = useStore();
 const { count } = storeToRefs(store);
-const { increment, decrement } = store;
+const { increment, decrement, incrementAsync, decrementAsync } = store;
 </script>
