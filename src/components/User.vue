@@ -17,10 +17,12 @@
       değiştirir ve bu değişiklikler otomatik olarak kullanıcı arayüzüne
       yansıtılır.
     </p>
-    <p>user name : {{ user.name }}</p>
-    <p>user surname : {{ user.surname }}</p>
-    <button @click="changeName">changeName</button>
-    <button @click="changeSurname">changeSurname</button>
+    <div class="border">
+      <p>user name : {{ user.name }}</p>
+      <p>user surname : {{ user.surname }}</p>
+      <button @click="changeName">changeName</button>
+      <button @click="changeSurname">changeSurname</button>
+    </div>
     <hr />
     <h2>ref</h2>
     <p>
@@ -33,10 +35,12 @@
       değiştirir. Bu değişikliklerin kullanıcı arayüzüne yansıtılması için,
       Vue.js'in yeniden oluşturulması gerekir.
     </p>
-    <p>user2 name : {{ user2.name }}</p>
-    <p>user2 surname : {{ user2.surname }}</p>
-    <button @click="changeName2">changeName2</button>
-    <button @click="changeSurname2">changeSurname2</button>
+    <div class="border">
+      <p>user2 name : {{ user2.name }}</p>
+      <p>user2 surname : {{ user2.surname }}</p>
+      <button @click="changeName2">changeName2</button>
+      <button @click="changeSurname2">changeSurname2</button>
+    </div>
     <p>
       <b> Özetle:</b>
 
