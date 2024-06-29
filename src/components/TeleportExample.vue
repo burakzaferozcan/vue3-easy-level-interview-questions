@@ -1,8 +1,16 @@
 <template>
   <div class="border">
-    <h1>Teleport Örneği</h1>
+    <h1>Teleport Örneği v-if</h1>
+    <h3>v-if :</h3>
+    <ul>
+      <li>DOM'da koşul sağlanmadığında elemanı tamamen kaldırır</li>
+      <li>Eleman yeniden eklendiğinde yeniden oluşturulur.</li>
+      <li>
+        Daha fazla maliyetli olabilir, ancak elemanlar sık değiştiğinde
+        uygundur.
+      </li>
+    </ul>
     <button @click="showModal = true">Modali Aç</button>
-
     <teleport to="#modal-target">
       <div v-if="showModal" class="modal border">
         <h2>Bu bir modal</h2>
@@ -17,7 +25,7 @@ import { ref } from "vue";
 const showModal = ref(false);
 </script>
 
-<style>
+<style scoped>
 .modal {
   position: fixed;
   top: 50%;

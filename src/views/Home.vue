@@ -19,7 +19,11 @@
     <User />
     <Test />
     <PiniaExample />
-    <TeleportExample />
+    <div class="border">
+      <h1>v-if & v-show farkı</h1>
+      <TeleportExample />
+      <TeleportExample2 />
+    </div>
   </div>
 </template>
 
@@ -32,6 +36,7 @@ import Product from "../components/Product.vue";
 import Test from "../components/Test.vue";
 import PiniaExample from "../components/PiniaExample.vue";
 import TeleportExample from "../components/TeleportExample.vue";
+import TeleportExample2 from "../components/TeleportExample2.vue";
 
 const title2 = ref("Interview Preparation prop 2");
 </script>
