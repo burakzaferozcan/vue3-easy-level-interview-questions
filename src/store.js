@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
-
 const useStore = defineStore({
-  id: "store",
+  id: "counterStore",
   state: () => ({
     count: 0,
   }),
@@ -12,12 +11,12 @@ const useStore = defineStore({
     decrement() {
       this.count--;
     },
-    async incrementAsync(delay) {
-      await new Promise((resolve) => setTimeout(resolve, delay));
+    async incrementAsync() {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       this.increment();
     },
-    async decrementAsync(delay) {
-      await new Promise((resolve) => setTimeout(resolve, delay));
+    async decrementAsync() {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       this.decrement();
     },
   },

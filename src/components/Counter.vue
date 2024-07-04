@@ -3,7 +3,6 @@
     <h1>ref ve computed</h1>
     <p>count : {{ count }}</p>
     <p>Double Count (computed): {{ doubleCount }}</p>
-
     <button @click="increment">+</button>
     <button @click="decrement">-</button>
   </div>
